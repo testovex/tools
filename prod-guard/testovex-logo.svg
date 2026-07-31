@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1A3FAA"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield body -->
+  <polygon points="54,24 346,24 376,54 376,218 200,376 24,218 24,54"
+           fill="url(#sg)"/>
+  <!-- Shield border -->
+  <polygon points="54,24 346,24 376,54 376,218 200,376 24,218 24,54"
+           fill="none" stroke="#6384D4" stroke-width="4" stroke-opacity="0.6"/>
+  <!-- T horizontal bar -->
+  <rect x="125" y="87" width="150" height="50" fill="white"/>
+  <!-- T stem -->
+  <rect x="175" y="137" width="50" height="105" fill="white"/>
+  <!-- Emerald check dot -->
+  <circle cx="200" cy="284" r="16" fill="#10B981"/>
+  <polyline points="192,284 198,291 210,275"
+            fill="none" stroke="white" stroke-width="3.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

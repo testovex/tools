@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PROD Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="pg-popup">
+    <div class="pg-header">
+      <img src="icons/icon48.png" class="pg-logo" alt="PROD Guard">
+      <div>
+        <div class="pg-title">PROD Guard</div>
+        <div class="pg-tag">Never break production again</div>
+      </div>
+    </div>
+
+    <div id="pg-status" class="pg-status">
+      <div class="pg-status-label">Current tab</div>
+      <div id="pg-status-detail" class="pg-status-detail">Loading…</div>
+    </div>
+
+    <div class="pg-controls">
+      <label class="pg-switch">
+        <input type="checkbox" id="pg-enabled" checked>
+        <span class="pg-switch-slider"></span>
+        <span class="pg-switch-label">Protection enabled</span>
+      </label>
+
+      <label class="pg-switch">
+        <input type="checkbox" id="pg-sound">
+        <span class="pg-switch-slider"></span>
+        <span class="pg-switch-label">Sound alert on match</span>
+      </label>
+    </div>
+
+    <div class="pg-actions">
+      <button id="pg-configure" class="pg-btn pg-btn-primary">Configure rules</button>
+    </div>
+
+    <div class="pg-footer">
+      Built by <a href="https://testovex.com" target="_blank" rel="noopener">Testovex</a> — enterprise test automation
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

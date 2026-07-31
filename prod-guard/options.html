@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PROD Guard — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="pg-container">
+    <header class="pg-header">
+      <div class="pg-logo-block">
+        <img src="icons/icon128.png" class="pg-logo" alt="PROD Guard">
+        <div>
+          <h1>PROD Guard</h1>
+          <p class="pg-tag">Never break production again</p>
+        </div>
+      </div>
+      <a href="https://testovex.com" target="_blank" class="pg-testovex-link">
+        Built by <strong>Testovex</strong>
+      </a>
+    </header>
+
+    <div id="pg-welcome" class="pg-welcome" style="display:none;">
+      <h2>🎉 Welcome to PROD Guard</h2>
+      <p>Three default rules are enabled below. Add your own to protect your team from
+        accidentally deleting the wrong data, sending test emails to real customers,
+        or clicking the wrong button on a live admin panel.</p>
+    </div>
+
+    <section class="pg-section">
+      <h2>General Settings</h2>
+      <div class="pg-form-row">
+        <label class="pg-switch">
+          <input type="checkbox" id="pg-enabled" checked>
+          <span class="pg-switch-slider"></span>
+          <span class="pg-switch-label">Enable protection (turn off to disable all rules)</span>
+        </label>
+      </div>
+      <div class="pg-form-row">
+        <label class="pg-switch">
+          <input type="checkbox" id="pg-sound">
+          <span class="pg-switch-slider"></span>
+          <span class="pg-switch-label">Sound alert on critical matches</span>
+        </label>
+        <button id="pg-test-sound" class="pg-btn" style="margin-left: 56px; margin-top: 4px;">🔊 Test sound</button>
+        <span id="pg-test-sound-status" style="margin-left: 8px; font-size: 12px; color: #6B7280;"></span>
+      </div>
+    </section>
+
+    <section class="pg-section">
+      <div class="pg-section-head">
+        <h2>Rules</h2>
+        <button id="pg-add-rule" class="pg-btn pg-btn-primary">+ Add rule</button>
+      </div>
+      <p class="pg-hint">
+        Rules match against the full URL. Use <strong>substring</strong> for simple matches
+        or <strong>regex</strong> for advanced patterns. Set severity to <strong>critical</strong>
+        for real production URLs (red banner) or <strong>warning</strong> for sensitive
+        environments like staging or admin panels (orange banner).
+      </p>
+      <div id="pg-rules-list" class="pg-rules-list"></div>
+    </section>
+
+    <section class="pg-section">
+      <h2>Test a URL</h2>
+      <p class="pg-hint">Paste any URL to see which rules would match.</p>
+      <div class="pg-test-row">
+        <input type="text" id="pg-test-url" placeholder="https://example.com/admin" class="pg-input">
+        <button id="pg-test-btn" class="pg-btn">Test</button>
+      </div>
+      <div id="pg-test-result" class="pg-test-result"></div>
+    </section>
+
+    <footer class="pg-footer">
+      <p>PROD Guard v<span id="pg-version">?</span> — free forever, made with ❤️ by
+        <a href="https://testovex.com" target="_blank">Testovex</a>.
+        For enterprise test automation at scale, visit our platform.</p>
+    </footer>
+  </div>
+
+  <template id="pg-rule-template">
+    <div class="pg-rule" data-rule-id="">
+      <div class="pg-rule-row-top">
+        <label class="pg-switch pg-switch-compact">
+          <input type="checkbox" class="pg-rule-enabled">
+          <span class="pg-switch-slider"></span>
+        </label>
+        <input type="text" class="pg-rule-label pg-input" placeholder="Rule name (e.g., 'AWS Production Console')">
+        <select class="pg-rule-severity pg-select">
+          <option value="critical">Critical (red)</option>
+          <option value="warning">Warning (orange)</option>
+        </select>
+        <button class="pg-rule-delete pg-btn pg-btn-icon" title="Delete rule">🗑️</button>
+      </div>
+      <div class="pg-rule-row-bottom">
+        <select class="pg-rule-type pg-select">
+          <option value="substring">Contains text</option>
+          <option value="regex">Regex pattern</option>
+        </select>
+        <input type="text" class="pg-rule-pattern pg-input" placeholder="e.g., 'prod' or 'app.acme.com'">
+        <label class="pg-checkbox">
+          <input type="checkbox" class="pg-rule-case">
+          <span>Case sensitive</span>
+        </label>
+      </div>
+    </div>
+  </template>
+
+  <script src="options.js"></script>
+</body>
+</html>

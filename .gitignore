@@ -1,0 +1,62 @@
+# Build artifacts — these are regenerated from source
+*.zip
+*.crx
+*.pem
+dist/
+build/
+out/
+
+# Node / npm (for future JS-heavy tools)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm/
+
+# Python (for build scripts like build-icons.py)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+*.key
+secrets/
+
+# Testing
+coverage/
+.nyc_output/
+.pytest_cache/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
