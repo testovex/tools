@@ -96,46 +96,6 @@ prod-guard/
 ├── build-icons.py         Regenerate icons if you want to tweak the design
 └── README.md              This file
 ```
-
----
-
-## Chrome Web Store Submission
-
-When you're ready to publish:
-
-1. **Zip the folder** (excluding `build-icons.py` and `README.md` if you want):
-   ```bash
-   cd prod-guard
-   zip -r ../prod-guard.zip . -x "build-icons.py" "README.md"
-   ```
-2. Sign in at https://chrome.google.com/webstore/devconsole (one-time $5 developer fee; if you already paid it for another extension like Testovex, you don't pay again).
-3. **New item** → upload the zip.
-4. Fill in the store listing:
-   - **Short description (132 chars max):** *"Big red banner on production URLs. Never accidentally delete prod data or send test emails to real users again."*
-   - **Detailed description:** paste the "Why" + "Features" sections from this README.
-   - **Screenshots (1280×800 or 640×400, at least 1):** capture the banner on a fake prod page + the options page + the popup.
-   - **Category:** Developer Tools
-   - **Privacy policy URL:** create one on testovex.com (`/privacy-prodguard`) — required because of `<all_urls>` host permission. Template: "PROD Guard does not collect, transmit, or store any personal data. All rules and settings are stored locally in your browser via `chrome.storage.sync`. We make zero external network requests."
-5. **Justify permissions** in the review notes:
-   - `storage` — persist user rules across sessions
-   - `activeTab` — read current tab URL for popup status
-   - `<all_urls>` — must match rules against any URL the user visits
-
-Review typically takes 1–3 business days.
-
----
-
-## Marketing / Growth
-
-Since this is free forever, the win is the top-of-funnel to Testovex:
-
-- **Extension footer** links to https://testovex.com on the banner, popup, and options page.
-- **Blog post** on testovex.com: *"I built PROD Guard after deleting a prod table. Here's the story."* Link the extension.
-- **LinkedIn post** (Puneet's account): screenshot of the red banner + a war story. Devs love this — it's a shame post they can nod along to.
-- **Hacker News Show HN** when it's live on the store.
-- **Reddit** r/programming, r/webdev, r/devops — post the war story, not the product.
-- **Product Hunt** launch on a Tuesday morning PT.
-
 ---
 
 ## Roadmap (post-v1.0)
