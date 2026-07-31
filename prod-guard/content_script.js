@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Testovex — https://testovex.com
+
 // PROD Guard — content script
 // Runs on every page. Checks the current URL against user rules.
 // If any rule matches, injects a warning banner at the top of the page.

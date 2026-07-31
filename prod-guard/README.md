@@ -1,6 +1,10 @@
-# PROD Guard
+<p align="center">
+  <img src="icons/icon128.png" width="128" alt="PROD Guard logo">
+</p>
 
-**Never break production again.**
+<h1 align="center">PROD Guard</h1>
+
+<p align="center"><strong>Never break production again.</strong></p>
 
 A Chrome extension that shows a big red warning banner when you visit production URLs — so you don't accidentally delete real customer data, run destructive scripts, or send test emails from a prod inbox.
 
@@ -41,7 +45,7 @@ Until it's live on the Chrome Web Store, install it manually:
 3. Turn on **Developer mode** (top-right toggle).
 4. Click **Load unpacked**.
 5. Select this `prod-guard/` folder.
-6. Done. The 🛡️ icon appears in your toolbar. The options page opens automatically on first install with 3 pre-seeded rules.
+6. Done. The PROD Guard shield icon appears in your Chrome toolbar. The options page opens automatically on first install with 3 pre-seeded rules.
 
 ---
 

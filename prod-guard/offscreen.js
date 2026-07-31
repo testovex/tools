@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Testovex — https://testovex.com
+
 // PROD Guard — offscreen audio player
 // Runs inside a hidden extension document so Web Audio can play
 // without a page user-gesture. Reachable only via chrome.runtime messages

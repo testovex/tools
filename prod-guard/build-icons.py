@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Testovex — https://testovex.com
 """Generate PROD Guard icons (16, 48, 128 PNG)."""
 
 from PIL import Image, ImageDraw, ImageFont

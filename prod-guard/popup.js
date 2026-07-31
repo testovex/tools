@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Testovex — https://testovex.com
+
 // PROD Guard — popup logic
 
 (async function () {

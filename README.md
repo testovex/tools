@@ -8,15 +8,24 @@ Every tool in this repository is free forever. If you find them useful and your 
 
 ## Available tools
 
-### [PROD Guard](./prod-guard/)
-
-A Chrome extension that shows a big red banner when you visit production URLs. Prevents accidentally deleting prod data, sending test emails to real users, or clicking the wrong button on a live admin panel.
-
-- **Type:** Chrome Extension (Manifest V3)
-- **Platform:** Chrome, Edge, Brave (any Chromium browser)
-- **Status:** Live
-- **Install:** [Chrome Web Store](#) *(link once approved)*
-- [Read more →](./prod-guard/README.md)
+<table>
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="./prod-guard/icons/icon128.png" width="96" alt="PROD Guard">
+    </td>
+    <td valign="top">
+      <h3><a href="./prod-guard/">PROD Guard</a></h3>
+      <p>A Chrome extension that shows a big red banner when you visit production URLs. Prevents accidentally deleting prod data, sending test emails to real users, or clicking the wrong button on a live admin panel.</p>
+      <ul>
+        <li><strong>Type:</strong> Chrome Extension (Manifest V3)</li>
+        <li><strong>Platform:</strong> Chrome, Edge, Brave (any Chromium browser)</li>
+        <li><strong>Status:</strong> Live</li>
+        <li><strong>Install:</strong> <a href="#">Chrome Web Store</a> <em>(link once approved)</em></li>
+        <li><a href="./prod-guard/README.md">Read more →</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
