@@ -10,6 +10,12 @@ A Chrome extension that shows a big red warning banner when you visit production
 
 Free forever. Built by [Testovex](https://testovex.com).
 
+<p align="center">
+  <a href="https://chrome.google.com/webstore/detail/bfpiapnhpeglfkpebbhoplimjojjblci">
+    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Install-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge" alt="Install on Chrome Web Store">
+  </a>
+</p>
+
 ---
 
 ## Why PROD Guard?
@@ -36,9 +42,13 @@ PROD Guard is a lightweight visual seatbelt. It watches every tab you open. If t
 
 ---
 
-## Installation (Developer Mode)
+## Installation
 
-Until it's live on the Chrome Web Store, install it manually:
+**Recommended — Chrome Web Store (one click):**
+
+👉 **[Install PROD Guard from the Chrome Web Store](https://chrome.google.com/webstore/detail/bfpiapnhpeglfkpebbhoplimjojjblci)**
+
+**Alternative — Developer Mode (for building from source or previewing pre-release changes):**
 
 1. Download or clone this folder to your computer.
 2. Open Chrome → `chrome://extensions/`.
