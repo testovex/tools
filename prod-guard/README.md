@@ -44,18 +44,9 @@ PROD Guard is a lightweight visual seatbelt. It watches every tab you open. If t
 
 ## Installation
 
-**Recommended — Chrome Web Store (one click):**
-
 👉 **[Install PROD Guard from the Chrome Web Store](https://chrome.google.com/webstore/detail/bfpiapnhpeglfkpebbhoplimjojjblci)**
 
-**Alternative — Developer Mode (for building from source or previewing pre-release changes):**
-
-1. Download or clone this folder to your computer.
-2. Open Chrome → `chrome://extensions/`.
-3. Turn on **Developer mode** (top-right toggle).
-4. Click **Load unpacked**.
-5. Select this `prod-guard/` folder.
-6. Done. The PROD Guard shield icon appears in your Chrome toolbar. The options page opens automatically on first install with 3 pre-seeded rules.
+The options page opens automatically on first install with 3 pre-seeded rules.
 
 ---
 
